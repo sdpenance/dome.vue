@@ -1,6 +1,5 @@
 <template>
-    <div>
-         <div class="col-md-4">
+    <div class="col-md-4">
         <form class="form-horizontal">
           <div class="form-group">
             <label>用户名</label>
@@ -16,39 +15,36 @@
             </div>
           </div>
         </form>
-      </div> 
-    </div>
+      </div>
 </template>
 <script>
 export default {
     name:'',
     props:['addComment'],
-    data(){
-      return{
+    data() {
+      return {
         username:'',
         content:''
       }
     },
     methods:{
       addC(){
-        let {username,content}=this;
-         let id =Date.now()
+        let {username,content}=this
+        let id=Date.now()
         if(username.trim()&&content.trim()){
-         
           let obj ={
-            id,
             username,
+            id,
             content
           }
           this.addComment(obj)
         }else{
           alert('请输入合法内容')
         }
-        this.username=''
+        this.username='',
         this.content=''
       }
     }
-
 }
 </script>
 <style scoped>

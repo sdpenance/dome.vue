@@ -1,5 +1,5 @@
 <template>
-    <header class="site-header jumbotron">
+      <header class="site-header jumbotron">
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
@@ -11,10 +11,7 @@
 </template>
 <script>
 export default {
-    name:'Header',
-    components:{
-
-    }
+    name:''
 }
 </script>
 <style scoped>
